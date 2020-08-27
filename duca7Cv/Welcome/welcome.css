@@ -26,6 +26,51 @@ body,html{
     color: #FFFFFF;
 }
 
+.side-bar{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.side-bar a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  background:lightsalmon;
+  text-transform: uppercase;
+  padding: 15px 0 15px 0;
+  margin: 0 0 15px 0;
+  width: 200px;
+  letter-spacing: 1.5px;
+  margin-left:-130px ;
+  transition: 0.5 ease;
+}
+
+.side-bar a span{
+  position: absolute;
+  float: right;
+  text-align: center;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  background: #FFFFFF;
+  right: 0;
+  top: 0;
+}
+
+.side-bar a span img{
+  position: absolute;
+  text-align: center;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.side-bar a:hover{
+  margin-left: 0px;
+}
+
 @media screen and (max-width: 414px) {
     .title {
       font-size: 15px;
