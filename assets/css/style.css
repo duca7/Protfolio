@@ -85,3 +85,71 @@ img {
     height: auto;
     display: block;
 }
+
+
+/*===== LAYOUT =====*/
+
+.bg-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    /* margin-left: var(--mb-2);
+    margin-right: var(--mb-2); */
+}
+
+.p-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+}
+
+
+/*===== NAV =====*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-height);
+    align-items: center;
+    font-weight: var(--font-semi);
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+}
+
+.nav__item {
+    margin-bottom: var(--mb-4);
+}
+
+.nav__link {
+    position: relative;
+    color: #fff;
+}
+
+.nav__link:hover {
+    position: relative;
+}
+
+.nav__logo {
+    color: var(--second-color);
+}
+
+.nav__toggle {
+    color: var(--second-color);
+}
