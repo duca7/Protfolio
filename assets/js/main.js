@@ -1,17 +1,19 @@
 /*===== MENU SHOW =====*/ 
 
-const showMenu = (toggleId, navId) =>{
+const toggleMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
 
     if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
+        toggle.addEventListener('click', () =>{
+            nav.classList.toggle('show');
+        });
     }
 }
-showMenu('nav-toggle','nav-menu')
 
+toggleMenu('nav-toggle', 'nav-menu');
+
+/*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){

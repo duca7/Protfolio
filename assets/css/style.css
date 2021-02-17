@@ -87,6 +87,35 @@ img {
 }
 
 
+/*===== CLASS CSS ===== */
+
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
 /*===== LAYOUT =====*/
 
 .bg-grid {
@@ -125,7 +154,7 @@ img {
         position: fixed;
         top: var(--header-height);
         right: -100%;
-        width: 80%;
+        width: 60%;
         height: 100%;
         padding: 2rem;
         background-color: var(--second-color);
@@ -152,4 +181,21 @@ img {
 
 .nav__toggle {
     color: var(--second-color);
+}
+
+
+/*Active menu*/
+
+.active::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+
+.show {
+    right: 0;
 }
