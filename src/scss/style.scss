@@ -5,12 +5,13 @@
 }
 
 :root {
-    --text-color: #252525;
+    --text-color: #ffffff;
 }
 
 body {
     width: 100%;
     font-family: Poppins;
+    background-color: black;
 }
 
 .container {
@@ -42,22 +43,27 @@ body {
 }
 
 .bg-title {
-    margin-top: 15rem;
+    margin-top: 12rem;
+    &__intro {
+        font-size: 3rem;
+        -webkit-text-stroke: 1px #677381;
+        color: transparent;
+    }
     &__list {
         list-style: none;
         .bg-title__items {
             display: inline-block;
             position: relative;
-            font-size: 7rem;
+            font-size: 6rem;
             text-align: center;
-            -webkit-text-stroke: 1px black;
+            -webkit-text-stroke: 1px #677381;
             color: transparent;
             padding-right: 2rem;
             top: 50%;
             & img {
                 position: absolute;
                 width: 300px;
-                height: 400px;
+                height: 250px;
                 object-fit: cover;
                 transform: translate(-50%, -50%);
                 top: -10%;

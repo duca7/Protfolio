@@ -15,3 +15,5 @@ items.forEach((el) => {
     gsap.set(image, { x: e.offsetX - 200 })
   })
 })
+
+

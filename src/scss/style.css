@@ -6,12 +6,13 @@
 }
 
 :root {
-  --text-color: #252525;
+  --text-color: #ffffff;
 }
 
 body {
   width: 100%;
   font-family: Poppins;
+  background-color: black;
 }
 
 .container {
@@ -53,7 +54,13 @@ body {
 }
 
 .bg-title {
-  margin-top: 15rem;
+  margin-top: 12rem;
+}
+
+.bg-title__intro {
+  font-size: 3rem;
+  -webkit-text-stroke: 1px #677381;
+  color: transparent;
 }
 
 .bg-title__list {
@@ -63,9 +70,9 @@ body {
 .bg-title__list .bg-title__items {
   display: inline-block;
   position: relative;
-  font-size: 7rem;
+  font-size: 6rem;
   text-align: center;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px #677381;
   color: transparent;
   padding-right: 2rem;
   top: 50%;
@@ -74,7 +81,7 @@ body {
 .bg-title__list .bg-title__items img {
   position: absolute;
   width: 300px;
-  height: 400px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: translate(-50%, -50%);
