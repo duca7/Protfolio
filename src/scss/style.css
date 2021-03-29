@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -90,5 +90,30 @@ body {
   left: 50%;
   z-index: -10;
   opacity: 0;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6rem;
+  margin-top: 2rem;
+}
+
+.about__text {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-style: initial;
+  text-align: justify;
+  margin-top: 2.5rem;
+  line-height: 1.5;
+}
+
+.about__img {
+  width: 400px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
